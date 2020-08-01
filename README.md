@@ -3,7 +3,7 @@
 A comprehensive library written in C++, aiming to help programmers and developers implement solutions to complex problems.
 The library consists of some must-have necessary codes that can be used in programs as a small part. 
 
-These codes are very useful during a competitive programming contest. All the codes are currently available are tested on platforms like Codeforces, Codechef, Atcoder.
+These codes are very useful during a competitive programming contest. All the codes that are currently available have been tested on platforms like Codeforces, Codechef, Atcoder.
 
 ### Contribution
 Contributions are welcome.
