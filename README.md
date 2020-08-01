@@ -5,6 +5,10 @@ The library consists of some must-have necessary codes that can be used in progr
 
 These codes are very useful during a competitive programming contest. All the codes that are currently available have been tested on platforms like Codeforces, Codechef, Atcoder.
 
+### Implementation
+
+I have tried to implement most of the codes using classes in C++. I prefer using classes in C++ because they provide a compact code and can be used as a black box during competitions. 
+
 ### Contribution
 Contributions are welcome.
 If you see any mistake in any of the code, please create an issue explaining the mistake in the code.
