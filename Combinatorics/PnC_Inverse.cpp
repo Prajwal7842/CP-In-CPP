@@ -34,10 +34,15 @@ void calFactorial(vector<int> &fact, int n, int mod){
 	}
 }
 
-int nCr(int n, int r) {
-	int dr = modInverse(fact[r], mod);
-	int dnr = modInverse(fact[n - r], mod);
-	return ((fact[n] % mod) * ((dr) % mod) * (dnr % mod)) % mod;
+int nCr(int n, int r)
+{
+    if (r > n)
+        return 0;
+    int dr = modInverse(fact[r], mod);
+    int dnr = modInverse(fact[n - r], mod);
+    int ans = ((fact[n] % mod) * (dr % mod)) % mod;
+    ans = (ans * (dnr % mod))%mod;
+    return ans % mod;
 }
  
 
@@ -45,7 +50,7 @@ int nCr(int n, int r) {
 int32_t main(){
 	int n = 4;
 	int r = 2;
-	calFactorial(fact, n, mod);
 	fact.assign(n+1, 0);
+	calFactorial(fact, n, mod);
 	return 0;
 }
